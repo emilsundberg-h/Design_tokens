@@ -1,0 +1,22 @@
+{
+  "name": "pattern-library-skeleton",
+  "version": "1.0.0",
+  "description": "A awesome pattern library for your products and experiences!",
+  "license": "ISC",
+  "author": "Juan Carlos Ruiz <klaufel@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaufel/pattern-library-skeleton.git"
+  },
+  "scripts": {
+    "tokens": "npm run tokens:api && npm run tokens:build",
+    "tokens:api": "bin/figma-tokens",
+    "tokens:build": "style-dictionary build"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "file-system": "^2.2.2",
+    "node-fetch": "^2.6.0",
+    "style-dictionary": "^2.8.3"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "space": {
+    "xxl": {
+      "value": "64px"
+    },
+    "xl": {
+      "value": "48px"
+    },
+    "l": {
+      "value": "40px"
+    },
+    "m": {
+      "value": "32px"
+    },
+    "s": {
+      "value": "24px"
+    },
+    "xs": {
+      "value": "16px"
+    },
+    "xxs": {
+      "value": "8px"
+    }
+  }
+}
