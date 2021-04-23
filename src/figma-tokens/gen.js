@@ -5,7 +5,7 @@ import getTypography from "./types/getTypography";
 import getSpace from "./types/getSpace";
 import getShadows from "./types/getShadows";
 import getBreakpoints from "./types/getBreakpoints";
-import getRadius from "./types/getRadius";
+import getBorderRadius from "./types/getBorderRadius";
 
 const genFile = (name, tokens, outDir) =>
   fs.writeFile(
@@ -44,7 +44,11 @@ const genTokens = (apikey, id, outDir) => {
           genFile("space", getSpace("Space", figmaTree), outDir);
           genFile("typography", getTypography("Typography", figmaTree), outDir);
           genFile("shadow", getShadows("Shadows", figmaTree), outDir);
-          genFile("radius", getRadius("Radius", figmaTree), outDir);
+          genFile(
+            "Border-radius",
+            getBorderRadius("Border-radius", figmaTree),
+            outDir
+          );
           genFile(
             "breakpoint",
             getBreakpoints("Breakpoints", figmaTree),
